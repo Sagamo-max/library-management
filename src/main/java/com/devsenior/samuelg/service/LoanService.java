@@ -7,12 +7,12 @@ import com.devsenior.samuelg.exceptions.NotFoundException;
 import com.devsenior.samuelg.model.Loan;
 import com.devsenior.samuelg.model.LoanState;
 
-public class LoanSerice {
+public class LoanService {
     private List<Loan> loans;
     private BookService bookService;
     private UserService userService;
 
-    public LoanSerice(BookService bookService, UserService userService) {
+    public LoanService(BookService bookService, UserService userService) {
         this.bookService = bookService;
         this.userService = userService;
         this.loans = new ArrayList<>();
